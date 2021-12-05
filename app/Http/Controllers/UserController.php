@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Blog;
+use App\Models\User;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,11 +24,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        $variable = 'from controller';
-        $blog = new Blog();
-        $blog->title = 'Blog title';
-        $array = ['Lutfor', 'John', 10, 10.5];
-        return view('hello',  compact('variable', 'blog', 'array'));
+        //
     }
 
     /**
@@ -45,10 +41,10 @@ class BlogController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Blog  $blog
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
+    public function show(User $user)
     {
         //
     }
@@ -56,10 +52,10 @@ class BlogController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Blog  $blog
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Blog $blog)
+    public function edit(User $user)
     {
         //
     }
@@ -68,10 +64,10 @@ class BlogController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Blog  $blog
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Blog $blog)
+    public function update(Request $request, User $user)
     {
         //
     }
@@ -79,10 +75,10 @@ class BlogController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Blog  $blog
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Blog $blog)
+    public function destroy(User $user)
     {
         //
     }

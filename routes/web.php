@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('hello', 'App\Http\Controllers\BlogController@create');
 Route::get('dashboard', 'App\Http\Controllers\DashboardController@index');
+Route::get('create-category', 'App\Http\Controllers\CategoryController@create');
+Route::post('post-category-form', 'App\Http\Controllers\CategoryController@store');
